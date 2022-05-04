@@ -4,7 +4,7 @@ const res = require('express/lib/response');
 const app = express();
 const https = require('https');
 const { Int32 } = require('mongodb');
-
+const favicon = require('serve-favicon');
 const question = require('./model/question')
 const user = require('./model/user')
 const image = require('./model/image')
@@ -194,6 +194,9 @@ app.use('/api/voice',voiceRouter)
 
 const PronunciationRouter = require(__dirname+'/controller/external_api.js')
 app.use('/api/find_word',PronunciationRouter)
+
+app.use(favicon(__dirname + '/favicon.ico'));
+app.get('/', (_, res)=> res.sendFile(__dirname + '/index.html'))
 
 
 app.listen(3000,() => console.log('Listening Port 3000'));
