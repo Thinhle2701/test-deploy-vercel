@@ -1,0 +1,24 @@
+{
+  "name": "learn-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.28.5",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.0",
+    "mongoose": "^6.2.2",
+    "node-fetch": "^2.6.6",
+    "unirest": "^0.6.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.1"
+  }
+}
